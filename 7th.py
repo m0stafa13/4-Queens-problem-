@@ -1,4 +1,3 @@
-N = 4
 #*function to check if the new place is empty
 def is_safe(state, column):
     row = len(state)
@@ -9,8 +8,8 @@ def is_safe(state, column):
         if abs(old_column - column) == abs(old_row - row):
             return False
     return True
-
-    #!printing tha atrix
+N = 4
+    #!printing tha matrix
 def print_board(state):
     for row in range(N):
         for column in range(N):
